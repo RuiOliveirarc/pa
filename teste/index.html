@@ -4,10 +4,52 @@
 	<title></title>
 </head>
 <body>
+	<?php
+	session_start();
+	?>
 	<a href="e2.php">Exercicio 2</a>
 	<br>
 	<a href="e3.php">Exercicio 3</a>
 	<br>
 	<a href="e4.php">Exercicio 4</a>
+	<br>
+	<br>
+	<h6>Exercicio 5</h6>
+	<form action="e5.php" method="POST">
+		<select name="diasemana">
+			<option value="segunda">Segunda</option>
+			<option value="terça">Terça</option>
+			<option value="quarta">Quarta</option>
+			<option value="quinta">Quinta</option>
+			<option value="sexta">Sexta</option>
+		</select>
+		
+		<select name="mes">
+			<option value="janeiro">Janeiro</option>
+			<option value="fevereiro">Fevereiro</option>
+			<option value="março">Março</option>
+			<option value="abril">Abril</option>
+			<option value="maio">Maio</option>
+			<option value="junho">Junho</option>
+			<option value="julho">Julho</option>
+			<option value="agosto">Agosto</option>
+			<option value="setembro">Setembro</option>
+			<option value="outubro">Outubro</option>
+			<option value="novembro">Novembro</option>
+			<option value="dezembro">Dezembro</option>
+		</select>
+		<input type="submit" name="Submeter Dados">
+	</form>
+
+	<br>
+	<br>
+	<h6>Exercicio 6</h6>
+	<form action="e6.php" method="POST">
+		Nome: <input type="text" name="nome">
+		<br><br>
+		Anos de nascimento: <input type="text" name="ano"> 
+		<br><br>
+		<input type="submit" name="Submeter Dados">
+	</form>
 </body>
 </html>
